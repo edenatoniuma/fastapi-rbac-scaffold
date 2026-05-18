@@ -1,0 +1,2 @@
+"""Project generator package."""
+

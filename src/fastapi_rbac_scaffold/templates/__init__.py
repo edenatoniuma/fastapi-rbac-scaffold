@@ -1,0 +1,2 @@
+"""Bundled project templates."""
+

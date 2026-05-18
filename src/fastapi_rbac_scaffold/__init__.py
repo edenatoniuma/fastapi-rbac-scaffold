@@ -1,0 +1,2 @@
+"""FastAPI RBAC scaffold package."""
+

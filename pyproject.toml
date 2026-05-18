@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fastapi-rbac-scaffold"
+version = "0.1.0"
+description = "A FastAPI project scaffold generator with multi-tenant RBAC."
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+  { name = "TBD" }
+]
+keywords = ["fastapi", "scaffold", "rbac", "multi-tenant", "sqlalchemy"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Framework :: FastAPI",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Typing :: Typed"
+]
+dependencies = []
+
+[project.scripts]
+fastapi-rbac-scaffold = "fastapi_rbac_scaffold.cli.main:main"
+
+[project.optional-dependencies]
+dev = [
+  "build>=1.2.0",
+  "pytest>=8.0.0",
+  "twine>=5.0.0"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fastapi_rbac_scaffold"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "/src",
+  "/tests",
+  "/README.md",
+  "/pyproject.toml"
+]
