@@ -4,13 +4,15 @@ build-backend = "hatchling.build"
 
 [project]
 name = "fastapi-rbac-scaffold"
-version = "0.1.0"
+version = "0.1.1"
 description = "A FastAPI project scaffold generator with multi-tenant RBAC."
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
-  { name = "TBD" }
+  { name = "Chaojun Fu" }
 ]
+license = "MIT"
+license-files = ["LICENSE"]
 keywords = ["fastapi", "scaffold", "rbac", "multi-tenant", "sqlalchemy"]
 classifiers = [
   "Development Status :: 2 - Pre-Alpha",
@@ -39,5 +41,6 @@ include = [
   "/src",
   "/tests",
   "/README.md",
+  "/LICENSE",
   "/pyproject.toml"
 ]
